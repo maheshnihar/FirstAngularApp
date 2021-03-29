@@ -1,5 +1,17 @@
-<div class="content" role="main">
+<div role="main" class="col-xs-12">
+  <h2>{{title}}</h2>
+  <hr />
+  <input type="text" id="inputName" [(ngModel)]="note" />
+  <button (click)="addNote()">Add Note</button>
+  <br />
+  <ul>
+    <li *ngFor="let not of notes">{{not}}</li>
+  </ul>
+  <hr />
 
-  <span>Hello world</span>
-
+  <h2>Drop down list</h2>
+  <select>
+    <option> option 1</option>
+    <option> option 2</option>
+  </select>
 </div>

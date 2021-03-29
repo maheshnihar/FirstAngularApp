@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FirstAngularApp';
+  title = 'Note Taking App';
+  notes: string[] = [];
+  note: string = '';
+
+  constructor() {
+  }
+
+  addNote() {
+    this.notes.push(this.note);
+    this.note = '';
+  }
 }
